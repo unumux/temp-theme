@@ -1,5 +1,27 @@
-$color-primary: #369 !default;
-$color-secondary: #7ac !default;
-$color-backdrop: #eee !default;
-$color-accent: #f84 !default;
-$color-warn: #c55 !default;
+/* Define colors */
+
+$color-azure: #369;
+$color-glacier: #7ac;
+$color-gallery: #eee;
+$color-coral: #f84;
+$color-chestnut-rose: #c55;
+$color-mine-shaft: #333;
+
+
+/* Assign colors to theme */
+
+$color-primary: $color-azure !default;
+$color-secondary: $color-glacier !default;
+$color-light: $color-gallery !default;
+$color-dark: $color-mine-shaft !default;
+$color-accent: $color-coral !default;
+$color-warn: $color-chestnut-rose !default;
+
+
+/* Assign theme colors to component parts */
+
+$color-component-background: $color-light !default;
+$color-component-rev-background: $color-dark !default;
+
+$color-component-text: $color-dark !default;
+$color-component-rev-text: $color-light !default;

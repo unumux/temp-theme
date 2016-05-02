@@ -422,3 +422,15 @@ textarea {
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
+
+/**
+ * Allow container padding to determine spacing above first child and below last child.
+ */
+
+:first-child {
+  margin-top: 0;
+}
+
+:last-child {
+  margin-bottom: 0;
+}
