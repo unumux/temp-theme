@@ -1,27 +1,27 @@
 /* Define colors */
 
-$color-azure: #369;
-$color-glacier: #7ac;
-$color-gallery: #eee;
-$color-coral: #f84;
-$color-chestnut-rose: #c55;
-$color-mine-shaft: #333;
+$color-cararra: #E6E4DC;
+$color-fern-green: #477339;
+$color-eucalyptus: #218563;
+$color-shamrock: #30BF8F;
+$color-sushi: #8DBF47;
+$color-desert-storm: #F8F8F6;
 
 
 /* Assign colors to theme */
 
-$color-primary: $color-azure !default;
-$color-secondary: $color-glacier !default;
-$color-light: $color-gallery !default;
-$color-dark: $color-mine-shaft !default;
-$color-accent: $color-coral !default;
-$color-warn: $color-chestnut-rose !default;
+$color-primary: $color-eucalyptus !default;
+$color-secondary: $color-cararra !default;
+$color-light: $color-cararra !default;
+$color-dark: $color-fern-green !default;
+$color-accent: $color-shamrock !default;
+$color-warn: $color-sushi !default;
 
 
 /* Assign theme colors to component parts */
-
-$color-component-background: $color-light !default;
-$color-component-rev-background: $color-dark !default;
-
-$color-component-text: $color-dark !default;
-$color-component-rev-text: $color-light !default;
+//
+// $color-component-background: $color-light !default;
+// $color-component-rev-background: $color-dark !default;
+//
+// $color-component-text: $color-dark !default;
+// $color-component-rev-text: $color-light !default;
