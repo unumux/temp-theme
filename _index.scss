@@ -1,3 +1,158 @@
-@import "normalize/index";
-@import "colors/index";
-@import "fonts/index";
+// (!) = needs work
+
+// =============================================================================
+// color palette variables
+//==============================================================================
+
+$color-black: #000;
+$color-white: #fff;
+$color-nepal: #8CA5BA;
+$color-lynch: #5E778C;
+$color-mirage: #1A2833;
+$color-well-read: #BF3030;
+$color-jelly-bean: #1F8199;
+
+// =============================================================================
+// color definition variables
+// =============================================================================
+
+// color used the most such as for the site background
+$color-base: $color-white !default;
+// the most used branding color
+$color-primary: $color-nepal !default;
+// the second most used branding color
+$color-secondary: $color-lynch !default;
+// branding color used to highlight items as actionable/important
+$color-accent: $color-jelly-bean !default;
+
+// (!) need to review these three
+$color-light: $color-white !default;
+$color-dark: $color-mirage !default;
+$color-warn: $color-well-read!default;
+
+// =============================================================================
+// opacity variables
+// =============================================================================
+
+$opacity-primary: 0.87;
+$opacity-secondary: 0.54;
+$opacity-hint: 0.38;
+$opacity-divider: 0.12;
+
+$opacity-primary-inverted: 1;
+$opacity-secondary-inverted: 0.70;
+$opacity-hint-inverted: 0.50;
+$opacity-divider-inverted: 0.12;
+
+// =============================================================================
+// text color variables
+// =============================================================================
+
+$color-text-primary: rgba($color-black, $opacity-primary);
+$color-text-secondary: rgba($color-black, $opacity-secondary);
+$color-text-hint: rgba($color-black, $opacity-hint);
+$color-text-divider: rgba($color-black, $opacity-divider);
+
+$color-text-primary-inverted: rgba($color-white, $opacity-primary-inverted);
+$color-text-secondary-inverted: rgba($color-white, $opacity-secondary-inverted);
+$color-text-hint-inverted: rgba($color-white, $opacity-hint-inverted);
+$color-text-divider-inverted: rgba($color-white, $opacity-divider-inverted);
+
+/* (!) other text items that need to be considered for variables maybe
+    body (standard stuff)
+    link
+    headings
+    figcaptions
+    figure
+    abbreviations <abbr>
+    citations <cite>
+    code <code>
+    definitions <dfn>
+    mark <mark>
+    quote <q>
+    blockquote
+    subscript <sub>
+    superscript <sup>
+*/
+
+// =============================================================================
+// border radius
+// =============================================================================
+
+ $border-radius: 3px !default;
+
+// =============================================================================
+// common colors by component or item
+// =============================================================================
+
+/*
+    negative space is portions of the site/page left unmarkedn or the space around or between components
+*/
+$color-negative-space: $color-base !default;
+$color-negative-space-invert: #000 !default;
+
+// links
+$color-link: $color-accent;
+$color-link-hover: rgba($color-accent, .5); // (!) meh whatever... what would we do here.
+$color-link-visited: darken($color-accent, 20%);
+
+// messages
+// (!) is this message text or background or either?
+$color-message: $color-base;
+$color-success: $color-accent;
+$color-warning: $color-well-read; /// (!) AHHHH It's a color name... nope nope nope
+$color-important: $color-well-read;
+$color-notice: $color-secondary;
+
+// content, highlight and error
+// (!) what's content? is the similar to message
+$color-content-background: $color-primary !default;
+$color-content-border: $color-secondary !default;
+$color-content-text: $color-dark !default;
+$color-content-icon: $color-accent !default;
+
+$color-highlight-background: $color-accent !default;
+$color-highlight-border: $color-dark !default;
+$color-highlight-text: $color-light !default;
+$color-highlight-icon: $color-dark !default;
+
+$color-error-background: $color-warn !default;
+$color-error-border: $color-dark !default;
+$color-error-text: $color-light !default;
+$color-error-icon: $color-nepal !default;
+
+// clickable does not include anchors
+// includes tabs, dropdowns, buttons, range slider handles
+$color-clickable-default-background: $color-nepal !default;
+$color-clickable-default-border: $color-nepal !default;
+$color-clickable-default-text: $color-mirage !default;
+$color-clickable-default-icon: $color-base !default;
+
+$color-clickable-active-background: $color-base !default;
+$color-clickable-active-border: $color-base !default;
+$color-clickable-active-text: $color-base !default;
+$color-clickable-active-icon: $color-base !default;
+
+$color-clickable-hover-background: $color-base !default;
+$color-clickable-hover-border: $color-base !default;
+$color-clickable-hover-text: $color-base !default;
+$color-clickable-hover-icon: $color-base !default;
+
+// (!)
+// header/toolbar
+    // background color/texture
+    // border color
+    // text color
+    // icon color
+
+// Modal Screen for Overlays
+    // background-color/texture
+    // overlay opacity
+
+// Drop Shadows
+    // background-color/texture
+    // shadow opacity
+    // shadow thickness
+    // top offset
+    // left offset
+    // corners
